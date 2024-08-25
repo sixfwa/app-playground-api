@@ -1,8 +1,6 @@
 import { Review } from '@/app/api/reviews/review';
 import cors from '@/app/lib/cors';
 
-export const runtime = 'edge';
-
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
 
